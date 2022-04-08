@@ -1,0 +1,48 @@
+/* @import url(destyle.css); */
+
+.gallery {
+  width: 800px;
+  background-color: gray;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start; */
+}
+
+.gallery .item:nth-child(1) {
+  order: 2;
+}
+
+.gallery .item:nth-child(2) {
+  order: 1;
+  align-self: center;
+}
+
+.gallery .item:nth-child(3) {
+  order: 3;
+}
+
+.container {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.container .menubar {
+  background-color: rgb(136, 230, 108);
+  flex-basis: 250px;
+}
+
+.container .content {
+  background-color: rgb(230, 165, 80);
+  flex-grow: 2;
+}
+
+.container .sidebar {
+  background-color: #6c96a1;
+  /* flex-basis: 150px;
+  flex-shrink: 2; */
+  flex: 1 2 150px;
+}
